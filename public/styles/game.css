@@ -1,0 +1,102 @@
+.game-board {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.game-board li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffdfb9;
+  background-color: #a4193d;
+  border: 1px solid #a4193d;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.disabled {
+  display: none;
+}
+
+.game-board li:hover {
+  background-color: #ffdfb9;
+  color: #a4193d;
+}
+
+.game-board li.disabled {
+  background-color: black;
+  cursor: default;
+  color: white;
+}
+
+#game-configuration {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+#game-configuration ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#game-configuration li {
+  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
+  background-color: #ffdfb9;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#game-configuration h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+#game-configuration h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #a4193d;
+}
+
+#game-configuration h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #a4193d;
+}
+
+#active-game {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+}
+
+#player-symbol {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a4193d;
+}
+
+#start-btn {
+  margin-top: 1rem;
+}
+
+.winner-banner {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #a4193d;
+}
