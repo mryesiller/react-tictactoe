@@ -16,6 +16,7 @@ const Game = () => {
     winner,
     gameOver,
     backdropStatus,
+    resetGame,
   } = useGameStore()
 
   const handleClick = (i) => {
@@ -68,7 +69,7 @@ const Game = () => {
                 <p className="winner-banner">Winner is {winner}</p>
 
                 <button
-                  onClick={() => window.location.reload()}
+                  onClick={() => resetGame()}
                   className="btn"
                   id="start-btn"
                 >
